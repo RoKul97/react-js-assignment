@@ -1,0 +1,56 @@
+.main {
+  margin-left: 260px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px;
+  gap: 10px;
+}
+
+.infoImg img {
+  width: 275px;
+  height: 175px;
+}
+
+.infoText {
+  font-size: medium;
+  grid-column: -1 / 4;
+}
+
+.component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+}
+.c1 {
+  border: thick solid red;
+  width: 975px;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin: auto;
+  }
+
+  .c1,
+  .c2 {
+    margin-top: 181px;
+  }
+}
+
+@media (max-wdith: 1024px) {
+  .infoText {
+    margin-bottom: 30px;
+  }
+  .component .c1,
+  .component .c2 {
+    margin-top: 100px;
+  }
+}
